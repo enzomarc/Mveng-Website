@@ -1,6 +1,6 @@
 /*
 * Ivy V1.0.0
-* Copyright 2019, Marc Enzo<github@enzomarc>
+* Copyright 2019, Marc Enzo<enzomarc@github>
 * www.getivy.com
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
@@ -168,6 +168,27 @@ a:hover {
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.capitalize {
+    text-transform: capitalize;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.centered {
+    text-align: center;
+}
+.lefted {
+    text-align: left;
+}
+.righted {
+    text-align: right;
+}
+.bold {
+    font-weight: bold;
+}
+.mediumize {
+    font-family: "Gilroy Medium", sans-serif;
+}
 .button,
 button,
 input[type="submit"],
@@ -177,16 +198,15 @@ input[type="button"] {
     padding: 0 30px;
     color: #788086;
     text-align: center;
-    font-size: 13px;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 12px;
     line-height: 38px;
     letter-spacing: .1rem;
     text-decoration: none;
     white-space: nowrap;
-    background: linear-gradient(360deg, #fafcfd, #fff);
-    box-shadow: 0px 1px 2px 0px rgba(217, 217, 217, 0.5);
-    border-radius: 4px;
-    border: 1px solid #eaeaea;
+    background: #fafcfd;
+    border-radius: 3px;
+    border: none;
     cursor: pointer;
     box-sizing: border-box;
     transition: all .3s; }
@@ -217,16 +237,15 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-    opacity: .9;
-    box-shadow: 0px 1.5px 1px 0px rgba(217, 217, 217, 0.5); }
+    opacity: .9; }
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
     color: #fff;
-    background: linear-gradient(360deg, #0d81e7, #1f8ff1);
-    border-color: #0d81e7; }
+    background: #f3113b;
+    border-color: #f3113b; }
 .button.button-danger,
 button.button-danger,
 input[type="submit"].button-danger,
@@ -299,12 +318,12 @@ input[type="password"],
 textarea,
 select {
     font-size: 14px;
-    height: 38px;
+    height: 45px;
     padding: 6px 12px; /* The 6px vertically centers text on FF, ignored by Webkit */
-    background-color: #f2f5f9;
-    border: 1px solid #f2f5f9;
-    border-radius: 4px;
-    box-shadow: none;
+    background-color: #fff;
+    border: 1px solid #fefefe;
+    border-radius: 3px;
+    box-shadow: 0 6px 5px 0 #f5f5f5;
     box-sizing: border-box;
     transition: all .3s }
 /* Error input fields */
@@ -345,7 +364,6 @@ input[type="password"]:focus,
 textarea:focus,
 select:focus {
     background: #fff;
-    border: 1.5px solid #0c81e7;
     outline: 0; }
 label,
 legend {
